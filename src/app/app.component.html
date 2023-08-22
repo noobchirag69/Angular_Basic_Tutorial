@@ -1,0 +1,48 @@
+<div class="container">
+  <!-- String Interpolation (Passing data from TypeSript to HTML) -->
+  <h1>{{ heading }}</h1>
+  <div class="grid">
+    <div class="imgBox">
+      <!-- Property Binding (Passing data from TypeSript to HTML element's properties) -->
+      <img [src]="imagePath" alt="Sample Image" title="Sample Image" />
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      corporis beatae ipsa a deleniti accusamus sed repellendus itaque placeat
+      incidunt nihil enim sint ea possimus recusandae voluptatum optio sunt
+      reprehenderit, impedit libero? Dolor quo odit, maxime laboriosam
+      architecto nobis, voluptates perspiciatis, molestiae deleniti qui soluta
+      esse! Esse hic vitae quia.
+    </p>
+  </div>
+  <!-- Component -->
+  <app-button></app-button>
+  <br /><br />
+  <div class="grid">
+    <!-- Event Binding -->
+    <input
+      class="textInput"
+      type="text"
+      placeholder="Enter some text and hit Enter..."
+      (keydown.enter)="triggerAlert($event)"
+    />
+    <!-- Two-Way Binding -->
+    <!-- To use ngModel, import FormsModule in 'app.module.ts' file -->
+    <input
+      class="textInput"
+      type="text"
+      placeholder="Enter some text..."
+      [(ngModel)]="defaultValue"
+    />
+  </div>
+  <!-- Display the text from Two-Way Binding -->
+  <p id="twoWayText">
+    Current Text: <em>{{ defaultValue ? defaultValue : "none" }}</em>
+  </p>
+  <!-- Structual Directive (ngIf) -->
+  <app-approval></app-approval>
+  <!-- Structual Directive (ngFor) -->
+  <app-anime></app-anime>
+  <!-- Structual Directive (ngSwitch) -->
+  <app-grade></app-grade>
+</div>

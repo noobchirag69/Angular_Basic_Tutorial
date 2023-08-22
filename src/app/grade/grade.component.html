@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <h3>Grade Checker</h3>
+  <input
+    type="text"
+    name="userGrade"
+    placeholder="Enter your grade..."
+    [(ngModel)]="userGrade"
+  />
+  <!-- ngSwitch -->
+  <ng-container [ngSwitch]="userGrade">
+    <span *ngSwitchCase="'A'">Excellent</span>
+    <span *ngSwitchCase="'B'">Very Good</span>
+    <span *ngSwitchCase="'C'">Satisfactory</span>
+    <span *ngSwitchCase="'D'">Bad</span>
+    <span *ngSwitchCase="'E'">Very Bad</span>
+    <span *ngSwitchCase="'F'">Disqualified</span>
+    <span *ngSwitchDefault>Grades: A to F</span>
+  </ng-container>
+</div>

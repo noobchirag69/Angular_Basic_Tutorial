@@ -1,0 +1,36 @@
+.wrapper {
+  margin: 20px 0;
+}
+
+.wrapper p {
+  margin: 10px auto;
+}
+
+.wrapper button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#yes {
+  background-color: green;
+  color: #fff;
+}
+
+#no {
+  background-color: red;
+  color: #fff;
+}
+
+#response {
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}

@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <h3>My Anime WatchList:</h3>
+  <ng-container *ngIf="animeList && animeList.length; else noAnimes">
+    <ul>
+      <!-- ngFor -->
+      <li *ngFor="let anime of animeList; let i = index">
+        #{{ i + 1 }}: {{ anime }}
+      </li>
+    </ul>
+  </ng-container>
+  <ng-template #noAnimes>
+    <p>Currently, there are no animes in my WatchList.</p>
+  </ng-template>
+</div>

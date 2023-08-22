@@ -1,0 +1,9 @@
+<button
+  (click)="toggleColor()"
+  [ngStyle]="{
+    color: isStyleApplied ? '#fff' : '#000',
+    backgroundColor: isStyleApplied ? '#1d3684' : 'buttonface'
+  }"
+>
+  Click Me
+</button>
