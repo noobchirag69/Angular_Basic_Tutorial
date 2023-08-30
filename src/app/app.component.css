@@ -39,6 +39,28 @@
   font-weight: 500;
 }
 
+.family {
+  margin: 20px auto;
+}
+
+.family input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.family button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.family span {
+  color: red;
+}
+
 @media only screen and (max-width: 700px) {
   .grid {
     grid-template-columns: 1fr;

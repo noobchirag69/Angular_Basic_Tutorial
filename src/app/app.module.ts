@@ -7,9 +7,11 @@ import { FormsModule } from '@angular/forms';
 import { ApprovalComponent } from './approval/approval.component';
 import { AnimeComponent } from './anime/anime.component';
 import { GradeComponent } from './grade/grade.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonComponent, ApprovalComponent, AnimeComponent, GradeComponent],
+  declarations: [AppComponent, ButtonComponent, ApprovalComponent, AnimeComponent, GradeComponent, ParentComponent, ChildComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

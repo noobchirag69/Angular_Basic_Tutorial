@@ -1,0 +1,15 @@
+<div class="parent">
+  <h1>Parent Component</h1>
+  <p *ngIf="messageFromChild">
+    Child said: <em>{{ messageFromChild }}</em>
+  </p>
+  <input
+    type="text"
+    placeholder="Talk to Child..."
+    [(ngModel)]="messageToChild"
+  />
+  <app-child
+    [messageFromParent]="messageToChild"
+    (sendMessageEmitter)="listenToChild($event)"
+  ></app-child>
+</div>

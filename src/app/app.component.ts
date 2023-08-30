@@ -1,4 +1,3 @@
-import { Target } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -21,4 +20,9 @@ export class AppComponent {
   }
 
   defaultValue = 'Two-Way Binding...';
+
+  pinCode = '';
+  submitMessage(e: HTMLInputElement) {
+    this.pinCode = e.value;
+  }
 }

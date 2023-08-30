@@ -45,4 +45,21 @@
   <app-anime></app-anime>
   <!-- Structual Directive (ngSwitch) -->
   <app-grade></app-grade>
+  <!-- Passing data between Components -->
+  <div class="family">
+    <app-parent></app-parent>
+  </div>
+  <!-- Template Reference -->
+  <div class="family">
+    <input type="text" placeholder="Pin Code" #templateInput ngModel />
+    <button
+      [disabled]="templateInput.value.length < 6"
+      (click)="submitMessage(templateInput)"
+    >
+      Submit
+    </button>
+    <p *ngIf="pinCode">
+      Your Pin Code is: <span>{{ pinCode }}</span>
+    </p>
+  </div>
 </div>
